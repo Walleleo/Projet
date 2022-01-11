@@ -23,7 +23,7 @@ class HomeController extends AbstractController
     public function home(): Response
     {
         return $this->render('HomeController.php', [
-            'home' => 'home',
+            'home' => 'HomeController',
         ]);
     }
 }
