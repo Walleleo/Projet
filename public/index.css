@@ -3,25 +3,259 @@ body {
 }
 
 .container{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+    border: solid red 2px;
+    height: 400px;
+    width: 100%;
 }
 
-.box{
+.container .box{
     width: 200px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px;
+    margin: 10px;
     font-size: 2rem;
     font-family: cursive;
 }
 
-.relative{
+.container .photo{
+    float: left;
+    margin:10px;
+    display: flex;
+    background-color: violet;   
+    border: rgb(238, 130, 171);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.container .boxMOI{
+    
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 10px;
+    font-size: 2rem;
+    font-family: cursive;
+}
+.container .MOI{  
+    background-color: #565d6e; 
+    border: rgb(238, 130, 171);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    
+}
+
+.container .relative{
     background-color: violet;
     border: rgb(238, 130, 171);
+    top: 0px;
+    left: 0px;
+   
+    
+    
+ 
+
 }
+
+.container .texte{
+    width: 320px;
+    height: 280px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    background-color:#565d6e ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+
+
+h3{
+    
+   margin: 20px;
+    font-family:Centaur;
+    font-size: 18pt;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    z-index: 1;
+
+}
+
+.container2{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid red 2px;
+    
+   
+}
+
+.container2 .boite{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #000;
+    float: left;
+    margin: 15px;
+    margin-inline: 60px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container2 .boite .voiture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(voiture.jpg) ;
+    width: 400px;
+    height: 300px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+
+.container2 .boite:hover .voiture{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container2 .boite .voiture .fa{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 80px;
+   transition: 0.5s;
+   color: white;
+}
+
+
+.container2 .boite:hover .voiture .fa{
+    font-size: 40px;
+}
+
+.container2 .boite .tracteur{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-image: url(tracteur.jpg);
+    width: 400px;
+    height: 300px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+
+.container2 .boite:hover .tracteur{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container2 .boite .tracteur .fa{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 80px;
+   transition: 0.5s;
+   color: white;
+}
+
+
+.container2 .boite:hover .tracteur .fa{
+    font-size: 40px;
+}
+
+.container2 .boite .skii{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(ski.jpg) ;
+    width: 400px;
+    height: 300px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+
+.container2 .boite:hover .skii{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container2 .boite .skii .fa{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 80px;
+   transition: 0.5s;
+   color: white;
+}
+
+
+.container2 .boite:hover .skii .fa{
+    font-size: 40px;
+}
+
+.container2 .boite .content{
+    position: absolute;
+    top :100%;
+    height: calc(100% - 100px);
+    text-align: center ;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+    
+}
+
+.container2 .boite:hover .content{
+    top :100px;
+    opacity: 1;
+}
+.container2 .boite .content h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.container2 .boite .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+
+
 
 b::before {
     content:"";
@@ -36,12 +270,14 @@ b::before {
      z-index: -1;
 }
 
+
 b:hover::before {
     top:0;
     border-radius:0;
 }
 
-b{color:white;
+b{
+    color:white;
     font-family: Arial, Helvetica, sans-serif;
     background: black;
     height: 150px;
@@ -49,7 +285,7 @@ b{color:white;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid :black;
+    border: 1px solid black;
     overflow :hidden; 
     font-size: 1.3em;
     font-weight: 700;
@@ -82,7 +318,7 @@ width: 200px;
 display: flex;
 align-items: center;
 justify-content: center;
-border: 1px solid :black;
+border: 1px solid black;
 overflow :hidden; 
 font-size: 1.3em;
 font-weight: 700;
