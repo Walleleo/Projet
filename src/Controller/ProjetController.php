@@ -26,4 +26,13 @@ class ProjetController extends AbstractController
             'test' => 'test',
         ]);
     }
+        /**
+     * @Route("/cv", name="cv")
+     */
+    public function cv(): Response
+    {
+        return $this->render('cv.html.twig', [
+            'cv' => 'cv',
+        ]);
+    }
 }
