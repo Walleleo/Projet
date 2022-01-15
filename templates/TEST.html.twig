@@ -108,9 +108,27 @@
               </div>
         </div>
         <div class="container5">
-            <button class="BTN">CV</button>
-            <button class="BTN1">PortFolio</button>
+            <li><a href="cv.html.twig"><button class="BTN">CV</button></a></li>
+            <li><a href="Portfolio.html.twig"><button class="BTN1">PortFolio</button></a></li>
             
+        </div>
+        <div class="container5">
+            
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="mail">e-mail :</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div>
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+            </form>
+
         </div>
             
             
