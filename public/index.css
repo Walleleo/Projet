@@ -189,7 +189,7 @@ h3{
     font-size: 40px;
 }
 
-.container2 .boite .skis{
+.container2 .boite .skii{
     position: absolute;
     top: 0;
     left: 0;
@@ -201,7 +201,7 @@ h3{
 }
 
 
-.container2 .boite:hover .skis{
+.container2 .boite:hover .skii{
     top: 20px;
     left: calc(50% - 40px);
     width: 80px;
@@ -209,7 +209,7 @@ h3{
     border-radius: 50%;
 }
 
-.container2 .boite .skis .fa{
+.container2 .boite .skii .fa{
    position: absolute;
    top: 50%;
    left: 50%;
@@ -220,7 +220,7 @@ h3{
 }
 
 
-.container2 .boite:hover .ski .fa{
+.container2 .boite:hover .skii .fa{
     font-size: 40px;
 }
 
