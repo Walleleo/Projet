@@ -9,7 +9,16 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProjetController extends AbstractController
 {
     /**
-     * @Route("/index", name="index")
+     * @Route("/2index", name="2index")
+     */
+    public function ndex(): Response
+    {
+        return $this->render('2index.html.twig', [
+            '2index' => '2index',
+        ]);
+    }
+    /**
+     * @Route("/index.html.twig", name="index")
      */
     public function index(): Response
     {
