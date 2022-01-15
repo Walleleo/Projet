@@ -253,19 +253,140 @@ h3{
     color: #fff;
 }
 
+
+
 .container3{
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
-    border: solid red 2px;
-    
-   
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 700px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid red 2px;
+  
 }
+
+::selection{
+  background: #e7a832;
+  color: #fff;
+}
+.container4{
+    position: absolute;
+  max-width: 1000px;
+  width: 100%;
+  padding: 80px 100px  80px  80px;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container4 .topic{
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+.container4 .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container4 .content .list{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 50px;
+  position: relative;
+}
+.container4 .content .list label{
+  height: 60px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 40px;
+  transition: all 1.5s ease;
+  color: #333;
+  z-index: 12;
+}
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help{
+  color: #fff;
+}
+.container4 .content .list label:hover{
+  color: #e7a832;
+}
+.container4 .content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 18px;
+  background: #e7a832;
+  transition: all 0.75s ease;
+}
+#home:checked ~ .list .slider{
+  top: 0;
+}
+#blog:checked ~ .list .slider{
+  top: 60px;
+}
+#help:checked ~ .list .slider{
+  top: 120px;
+}
+#code:checked ~ .list .slider{
+  top: 180px;
+}
+#about:checked ~ .list .slider{
+  top: 240px;
+}
+.container4 .content .text-content{
+  width: 80%;
+  height: 100%;
+}
+.container4 .content .text{
+  display: none;
+}
+.container4 .content .text .title{
+  font-size: 25px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+
+
+.container4 .content .text p{
+  margin: 0 0 10px;
+  padding: 0;
+  color: #000;
+  font-size: 20px;
+  text-align: justify;
+}
+.container4 .content .text-content .home{
+  display: block;
+}
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about{
+  display: block;
+}
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+  display: none;
+}
+.container4 .content input{
+  display: none;
+}
+
+
 
 
 
