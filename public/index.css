@@ -154,13 +154,46 @@ h3{
     font-size: 40px;
 }
 
+.container2 .boite .tracteur{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-image: url(tracteur.jpg);
+    width: 400px;
+    height: 300px;
+    transition: 0.5s;
+    z-index: 2;
+}
 
+
+.container2 .boite:hover .tracteur{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container2 .boite .tracteur .fa{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 80px;
+   transition: 0.5s;
+   color: white;
+}
+
+
+.container2 .boite:hover .tracteur .fa{
+    font-size: 40px;
+}
 
 .container2 .boite .skis{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(tracteur.jpg) ;
+    background-image: url(ski.jpg) ;
     width: 400px;
     height: 300px;
     transition: 0.5s;
@@ -187,7 +220,7 @@ h3{
 }
 
 
-.container2 .boite:hover .skis .fa{
+.container2 .boite:hover .ski .fa{
     font-size: 40px;
 }
 
