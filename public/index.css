@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:width@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*
+
+
 body {
     background-color: #323641;
+ 
+    
 }
 
 .container{
@@ -11,38 +17,47 @@ body {
     height: 600px;
     width: 100%;
 }
-.container h2{
-  position: relative;
-  font-size: 14vw;
-  color: #252839;
-  -webkit-text-stroke: 0.3vw #383d52;
+
+h5{
+  position: absolute;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 150px;
+  right: 25%;
+  left: 25%;
+  height: 320px;
+  font-size: 26px;
+  color: #fff;
+ 
   text-transform: uppercase;
 }
-
-.container h2::before {
+/*
+h5::before{
   content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #01fe87;
-  -webkit-text-stroke: 0vw #383d52;
-  border-right: 2px solid #01fe87;
-  overflow: hidden;
-  animation: animate 6s linear infinite;
-}
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+color: #fff;
+-webkit-text-stroke: 0vw #383d52;
+border-right: 2px solid #fff;
+overflow: hidden;
+/*animation: animate 8s linear infinite;*/
+
+
 
 @keyframes animate
 {
-  0%,10%,1000%
-  {
-    width: 0;
-  }
-  70%,90%
-  {
-    width: 100%;
-  }
+0%,10%,1000%
+{
+  width: 0;
+}
+70%,90%
+{
+  width: 100%;
+}
+
 }
 
 .container .box{
@@ -101,8 +116,8 @@ body {
 }
 
 .container .texte{
-    width: 320px;
-    height: 280px;
+    width: 380px;
+    height: 380px;
     float: left;
     margin: 10px;
     text-align: center;
@@ -119,7 +134,7 @@ h3{
     
    margin: 20px;
     font-family:Centaur;
-    font-size: 18pt;
+    font-size: 26pt;
     color: rgb(255, 255, 255);
     text-align: right;
     z-index: 1;
@@ -130,7 +145,7 @@ h3{
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 300px;
+    height: 600px;
     width: 100%;
     margin: 0px auto;
     display: flex;
@@ -296,7 +311,7 @@ h3{
   position: relative;
   height: 700px;
   width: 100%;
-  margin: 0px auto;
+  margin: 100px auto;
   display: flex;
   flex-wrap: wrap;
   border: solid red 2px;
