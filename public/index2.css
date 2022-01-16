@@ -13,7 +13,7 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    border: solid rgb(255, 255, 255) 2px;
+    
     height: 700px;
     width: 100%;
 }
@@ -1154,7 +1154,7 @@ animation: animate 6s linear infinite;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  border: solid red 2px;
+  
   height: 1200px;
   width: 100%;
 }
