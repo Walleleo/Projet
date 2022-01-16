@@ -13,8 +13,8 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    
-    height: 600px;
+    border: solid rgb(255, 255, 255) 2px;
+    height: 700px;
     width: 100%;
 }
 
@@ -23,9 +23,9 @@ h5{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   top: 150px;
-  right: 25%;
-  left: 25%;
-  height: 320px;
+  right: 35%;
+  left: 22%;
+  height: 360px;
   font-size: 26px;
   color: #fff;
  
@@ -207,7 +207,7 @@ h3{
     position: absolute;
     top: 0;
     left: 0%;
-    background-image: url(tracteur.jpg);
+    background-image: url("tracteur.jpg");
     width: 400px;
     height: 300px;
     transition: 0.5s;
